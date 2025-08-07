@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pink {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面需要从上往下加载，先写按钮，再写脚本，可以保证脚本
+     运行的时候所有元素已先渲染-->
+    <!--将js脚本放在body标签的最后，防止阻塞页面渲染-->
+    <button class="pink">1号</button>
+    <button>2号</button>
+    <button>3号</button>
+    <button>4号</button>
+    <button>5号</button>
+
+    <script>
+        let bts = document.querySelectorAll('button')
+        for (let i = 0; i < bts.length; i++) {
+            bts[i].addEventListener('click', function () {
+                document.querySelector(".pink").className = '';
+                bts[i].className = 'pink';
+            })
+        }
+
+    </script>
+</body>
+
+</html>
