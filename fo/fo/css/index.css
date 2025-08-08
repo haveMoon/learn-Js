@@ -1,0 +1,85 @@
+#wrapper #header .headerTop {
+  background-color: #eaeaea;
+  height: 30px;
+}
+#wrapper #header .headerTop .headTopMain {
+  width: 1200px;
+  margin: 0;
+  line-height: 30px;
+}
+#wrapper #header .headerTop .headTopMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headerTop .headTopMain .left {
+  float: left;
+}
+#wrapper #header .headerTop .headTopMain .left h5 {
+  float: left;
+  margin-left: 50px;
+  margin-right: 5px;
+}
+#wrapper #header .headerTop .headTopMain .left p {
+  float: left;
+}
+#wrapper #header .headerTop .headTopMain .left p a:first-child {
+  border-right: 1px solid #b3aeaa;
+  margin-right: 1px;
+  padding-right: 5px;
+}
+#wrapper #header .headerTop .headTopMain .right {
+  float: right;
+}
+#wrapper #header .headerTop .headTopMain .right nav {
+  font-size: 0px;
+}
+#wrapper #header .headerTop .headTopMain .right nav a {
+  margin-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  border-right: 1px solid #b3aeae;
+}
+#wrapper #header .headerTop .headTopMain .right nav a:last-child {
+  border: none;
+  padding-right: 0px;
+}
+#wrapper #header .headerBottom .headerBottomMain {
+  width: 1200px;
+  margin: 0 auto;
+}
+#wrapper #header .headerBottom .headerBottomMain::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #header .headerBottom .headerBottomMain .logo {
+  float: left;
+}
+#wrapper #header .headerBottom .headerBottomMain .logo a img {
+  width: 175px;
+  height: 56px;
+  margin: 25px 45px;
+}
+#wrapper #header .headerBottom .headerBottomMain .search {
+  float: right;
+  margin-top: 35px;
+}
+#wrapper #header .headerBottom .headerBottomMain .search input:first-child {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0 4px;
+  border: 3px solid #ea4a36;
+  float: left;
+}
+#wrapper #header .headerBottom .headerBottomMain .search input:last-child {
+  width: 68px;
+  height: 32px;
+  color: #fff;
+  background-color: #ea4a36;
+  border: none;
+}
+#wrapper #header .headerBottom .headerBottomMain .search input::-webkit-input-placeholder {
+  color: yellowgreen;
+}

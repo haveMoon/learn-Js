@@ -1,0 +1,10 @@
+//LESS 混合（mixin），用于实现 CSS 中的 clearfix 技巧。
+// clearfix 技巧的主要目的是清除浮动（clear floats），解决由于使用浮动布局导致的父容器高度塌陷问题。
+.clearfix()
+{
+    &::after{
+        clear:both;
+        display:block;
+        content:'';
+    }
+}

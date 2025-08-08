@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!--http-equiv属性：这个属性用于指定一个HTTP头部信息。
+    在这个例子中，http-equiv="X-UA-Compatible"意味着浏览器应该按照指定的兼容性模式来处理这个网页。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页面</title>
+    <!--引入外部样式表-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--最外层的包裹元素-->
+    <div id="wrapper">
+        <!--头部：分为上下两部分-->
+        <header id="header">
+            <!--上面的部分-->
+            <div class="headerTop">
+                <!--版心元素-->
+                <div class="headTopMain">
+                    <!--左侧-->
+                    <div class="left">
+                        <h5>欢迎来到尚优选！</h5>
+                        <p>
+                            <!--超链接标签，指向链接的目标地址-->
+                            <a href="javascript:;">登录</a>
+                            <a href="javascript:;">注册</a>
+                        </p>
+                    </div>
+                    <!--右侧-->
+                    <!--导航-->
+                    <div class="right">
+                        <nav>
+                        <!--超链接的;:是禁止页面跳-->
+                            <a href="javascript;:">我的订单</a>
+                            <a href="javascript;:">我的购物车</a>
+                            <a href="javascript;:">我的尚优选</a>
+                            <a href="javascript;:">尚优选会员</a>
+                            <a href="javascript;:">企业采购</a>
+                            <a href="javascript;:">关注尚优选</a>
+                            <a href="javascript;:">合作招商</a>
+                            <a href="javascript;:">商家后台</a>
+
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--下面部分-->
+            <div class="headerBottom">
+                <!--版心元素    -->
+                <div class="headBottomMain">
+                    <!--logo-->
+                    <h1 class="logo">
+                        <a href="javascript:;">
+                            <img src="images/logo.png" alt=""> 
+                        </a>
+                    </h1>
+                    <!--搜索框-->
+                    <div class="search">
+                        <input type="text" placeholder="请输入关键字">
+                        <input type="submit" value="搜索">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--script需要在body末尾写,防止渲染时间过长-->
+    <script>
+        console.log('Hello World');
+    </script>
+</body>
+</html>

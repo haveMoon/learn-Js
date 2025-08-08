@@ -17,8 +17,14 @@
 /**
  *      声明变量
  * 初始化：let var不必初始化，常量const 必须初始化
- * 变量作用域：let const属于块级作用域，var则属于函数作用域，在块中，被认为是全局
+ * 变量作用域：let const属于块级作用域，
+ * var则属于函数作用域或者脚本作用域，在块中，被认为是全局
 */
+
+/**
+ *      常量
+ * const声明的常量不能重新赋值，但是可以被修改，const必须初始化。
+ */
 const a = 2;
 function t() {
     var x = 10;
@@ -44,9 +50,48 @@ let x = [1, 2];
 //全局变量
 
 /**
- *      常量
- * const声明的常量不能重新赋值，但是可以被修改，const必须初始化。
+ *      数据类型
+ * 基本数据类型：Number、String、Boolean、Null、Undefined
+ * 引用数据类型：Object 
+ * 弱数据类型语言
+ * Number 数字型:可以是整数 小数 正数 负数
+ * NaN: Not A Number 一个特殊的值，一个计算错误
+ * NaN是粘性的，任何值和NaN计算都得到NaN;NaN !== NaN
+ * 
+ * string :单引号 双引号 反引号
+ * 使用表单、prompt取到值一般都是字符串
+ * 
+ * boolean 布尔类型：true false是布尔型字面量
+ * 
+ * undifned 未定义类型：变量声明但没有赋值，默认值为undifined
+ * 
+ * null 空类型：与undifined区别：null表示赋值了，但内容为空，undifined表示没有赋值
+ *  是用来说明对象的，变量里面存对象，但对象还没准备好，可以先填null
  */
+
+let anull = null;
+console.log(anull);
+//null 与 undifined 区别：null表示赋值了，但内容为空，undifined表示没有赋值
+console.log(null + 1);//1
+console.log(undefined + 1);//NaN
+console.log(null + undefined);//NaN
+
+
+/**
+ *       检测数据类型
+ * typeof 两种形式
+ * typeof x 运算符形式
+ * typeof(x) 函数形式
+ */
+
+let we = 'aaaa';
+console.log(typeof we);
+let inn;
+console.log(typeof inn);//undefined
+let nn = null;
+console.log(typeof nn);//null是对象 object
+
+
 
 //字面量
 [1, 2, 3];
@@ -168,3 +213,25 @@ console.log(
     console.log(message);
     // 输出: Hello, my name is <strong>Alice</strong> and I am <strong>25</strong> years old.
 }
+
+/**
+ *      数据类型转换
+ * 隐式转换：某些运算符被执行时，会自动进行类型转换
+ *  +：只要其中一个操作对象为字符串，则另一个操作对象也会被转换为字符串
+ * 除了+意外的算数运算符：会把所有数据转换为数字number
+ * 
+ * 显式转换：使用Number()、String()、Boolean()等函数进行显式转换
+ * parseInt(),parseFloat()
+*/
+console.log('1' + 2); // "12"
+console.log('100' - '10');//90
+//有时候加号+可以帮助转换为数字型
+console.log(typeof (+'123'));//输出：number
+console.log(+'11' + 11);//22
+
+console.log(Number('pink'));//NaN
+console.log(parseInt('12.94px'));//12
+//只能取出开头为数字的
+console.log(parseInt('abc12.94px'));//NaN
+
+
