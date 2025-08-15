@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        /* id选择器优先级是最高的 */
+    </style>
+</head>
+
+<body>
+    <div class="desp">元素选择器 类选择器 id选择器；id选择器优先级最高</div>
+    <div class="pp">
+        父级
+        <div class="cc">
+            子级
+        </div>
+    </div>
+
+    <div class="cc">同子级类名的其他元素</div>
+
+    <div class="cc violet tt">拥有多个类名，则对应多个类可以改变样式</div>
+    <!-- 颜色 -->
+    <div class="rgb">用RGB表示颜色</div>
+    <div class="hex">用HEX十六进制表示颜色</div>
+
+    <!-- 透明度 -->
+    <div class="rgba">使用可以rgba调节透明度，根据最后一个值0 - 1</div>
+    opacity
+    <div class="opacity">0.5</div>
+
+    <!-- 字体 -->
+    <p class="font1">字体样式</p>
+    <p class="font2">字体样式</p>
+    <p class="font3">字体样式</p>
+
+    <!-- box-model 盒子模型 -->
+    <div class="box-model">盒子模型</div>
+
+    <!-- 布局 display -->
+    <!-- 块级元素 -->
+    <!-- span非块级元素 -->
+    <span class="block">块级元素</span>
+    <span>块级元素</span>
+    <!-- 内联元素 -->
+    <div class="inline">内联元素</div>
+    <div class="inline-block">内联块元素</div>
+    <div class="none">隐藏元素</div>
+    <div class="flex">弹性盒子 或 灵活布局</div>
+    <div class="grid">网格布局</div>
+</body>
+
+</html>

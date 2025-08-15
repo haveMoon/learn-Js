@@ -37,4 +37,18 @@ myforEach(arr, wr);
 
 /**
  *      函数参数
+ * 函数的实际参数会被保存在一个类似数组的 arguments 对象中。
+ * arguments 变量只是“类数组”，而不是数组。它与数组类似，有索引编号和 length 属性。
+ * 尽管如此，它并不具备 Array 对象的所有数组操作方法。
+ * 
+ * 默认参数
+ * 
+ * 剩余参数：许将不确定数量的参数表示为数组。
  */
+
+function add(a, b) {
+    console.log(arguments);
+    console.log(arguments[0]);
+}
+
+add(1, 2);//输出：[Arguments] { '0': 1, '1': 2 };1

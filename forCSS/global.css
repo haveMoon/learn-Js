@@ -1,0 +1,96 @@
+/* 拥有父子关系/层级关系的元素 */
+.pp .cc {
+    color: green;
+}
+
+.cc {
+    color: blue;
+}
+
+.violet {
+    color: violet;
+}
+
+.tt {
+    font-size: 24px;
+}
+
+.rgb {
+    color: rgb(251, 85, 187);
+}
+
+.hex {
+    color: #be0d2b;
+}
+
+.rgba {
+    color: rgba(59, 242, 242, 0.5);
+}
+
+/* 控制透明度，用来控制整个元素及其子元素的透明度 */
+.opacity {
+    opacity: 0.2;
+}
+
+/* 字体 */
+.font1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.font2 {
+    /* 字体大小 */
+    font-size: 50px;
+    /* 行高 */
+    line-height: 32px;
+}
+
+.font3 {
+    /* 字体粗细 */
+    font-weight: 600;
+    /* 字体斜体 */
+    font-style: italic;
+    /* 字体装饰效果，下划线、上划线、删除线 */
+    text-decoration: line-through;
+}
+
+/* 盒子模型 */
+.box-model {
+    /* 外边距 */
+    margin-right: 10px;
+    /* 内边距 */
+    padding-top: 8px;
+
+    /* 边框 对应属性：粗细 风格 颜色*/
+    border: 1px dotted red;
+    /* dotted 圆点，dashed 虚线，solid实线 */
+
+    /* 本体 */
+    /* 可以设置宽高，也可以设置百分比 */
+    width: 40% fit-content;
+    height: 200px auto;
+    /* 字体对齐方式 */
+    text-align: center;
+}
+
+/* 布局 */
+/* 块级元素会独占一行，从上往下排列
+   很多元素默认就是块级元素*/
+.block {
+    display: block;
+}
+
+/* 内联元素会在一行内排列 很多元素默认内联元素 */
+.inline {
+    display: inline;
+}
+
+/* 内联块元素可以设置宽高 */
+.inline-block {
+    display: inline-block;
+    height: 40px;
+}
+
+/* 隐藏元素 */
+.none {
+    display: none;
+}

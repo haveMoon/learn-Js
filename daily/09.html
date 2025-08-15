@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            width: 80px;
+            text-align: center;
+            font: 100% Arial, sans-serif;
+        }
+
+        /*:hover 伪类选择器，用于选择鼠标悬停的元素*/
+        tr:not(:first-child):hover {
+            background-color: aqua;
+        }
+
+        th {
+            background-color: rgb(103, 147, 148);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>学生信息表</caption>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>所在地</th>
+        </tr>
+        <script>
+            const data = [
+                { name: '张三', age: 20, gender: '男', location: '北京' },
+                { name: 'll', age: 24, gender: '女', location: '上海' },
+                { name: '李四', age: 20, gender: '男', location: '湖州' },
+                { name: '张', age: 20, gender: '男', location: '广东' },
+                { name: '东东', age: 20, gender: '男', location: '北京' },
+                { name: '小丽', age: 20, gender: '男', location: '北京' }
+            ]
+            for (let i = 0; i < data.length; i++) {
+                let str =
+                    `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${data[i]['name']}</td>
+                    <td>${data[i].age}</td>
+                    <td>${data[i].gender}</td>
+                    <td>${data[i].location}</td>
+                </tr>
+                `
+                document.write(str);
+            }
+        </script>
+    </table>
+</body>
+
+</html>

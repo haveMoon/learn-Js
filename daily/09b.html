@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            width: 200px;
+            padding: auto;
+            margin: 0px;
+            float: left
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <script>
+            let data = [
+                {
+                    src: 'images/01.png',
+                    title: 'Think pp ',
+                    num: 1125
+                },
+                {
+                    src: 'images/02.png',
+                    title: 'Think pp ',
+                    num: 1125
+                },
+                {
+                    src: 'images/03.png',
+                    title: 'Think pp ',
+                    num: 1444
+                },
+                {
+                    src: 'images/04.png',
+                    title: 'Think pp ',
+                    num: 156
+                },
+                {
+                    src: 'images/05.png',
+                    title: 'Think pp ',
+                    num: 15
+                },
+                {
+                    src: 'images/06.png',
+                    title: 'Think pp ',
+                    num: 45
+                },
+                {
+                    src: 'images/07.png',
+                    title: 'Think pp ',
+                    num: 990
+                }
+            ]
+
+            for (let i = 0; i < data.length; i++) {
+                let str =
+                    `
+                <li>
+                    <a href = "#">
+                        <img src = ${data[i].src} alt ="">
+                        <h4>
+                            ${data[i].title}
+                        </h4>
+                        <div class = "info">
+                            <span>高级</span>·<span>${data[i].num}</span>人在学习
+                        </div>
+                    </a>
+                </li>`
+                document.write(str);
+            }
+        </script>
+    </ul>
+</body>
+
+</html>
